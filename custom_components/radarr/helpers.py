@@ -125,11 +125,8 @@ def format_movies(
     return formatted_movies
 
 
-RELEASE_TYPES = (
-    ("inCinemas", "cinema"),
-    ("digitalRelease", "digital"),
-    ("physicalRelease", "physical"),
-)
+# Only digital releases count for the upcoming sensor; cinema and physical dates are ignored.
+RELEASE_TYPES = (("digitalRelease", "digital"),)
 
 
 def _public_images(images: list[dict[str, Any]] | None) -> dict[str, str]:

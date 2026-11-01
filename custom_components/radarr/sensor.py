@@ -170,7 +170,7 @@ class RadarrSensor(RadarrEntity[T], SensorEntity):
 
 
 class RadarrUpcomingSensor(RadarrSensor[list[dict]]):
-    """Movies with a cinema, digital or physical release coming up, with artwork."""
+    """Movies with a digital release coming up, with artwork."""
 
     coordinator: UpcomingDataUpdateCoordinator
     # The movie list can be large; keep it out of the recorder.

@@ -160,7 +160,7 @@ class QueueDataUpdateCoordinator(RadarrDataUpdateCoordinator[int]):
 
 
 class UpcomingDataUpdateCoordinator(RadarrDataUpdateCoordinator[list[dict]]):
-    """Upcoming releases (cinema, digital, physical) with artwork."""
+    """Upcoming digital releases with artwork."""
 
     _update_interval = timedelta(hours=1)
 
